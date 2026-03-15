@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rashu Health Tracker ❤️</title><style>
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+text-align:center;
+padding:20px;
+color:#333;
+}
+
+.container{
+background:white;
+padding:20px;
+border-radius:15px;
+max-width:400px;
+margin:auto;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1{
+color:#ff4d6d;
+}
+
+.task{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:15px 0;
+padding:10px;
+border-radius:10px;
+background:#f7f7f7;
+}
+
+button{
+background:#ff4d6d;
+border:none;
+color:white;
+padding:6px 12px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button.done{
+background:#4CAF50;
+}
+
+.footer{
+margin-top:20px;
+font-size:14px;
+color:#777;
+}
+</style></head><body><div class="container"><h1>Rashu Health Tracker ❤️</h1>
+<p>Don't forget to eat and take medicine</p><div class="task">
+<span>🍳 Breakfast</span>
+<button onclick="toggle(this)">Mark</button>
+</div><div class="task">
+<span>🍛 Lunch</span>
+<button onclick="toggle(this)">Mark</button>
+</div><div class="task">
+<span>🍲 Dinner</span>
+<button onclick="toggle(this)">Mark</button>
+</div><div class="task">
+<span>💊 Medicine after Breakfast</span>
+<button onclick="toggle(this)">Mark</button>
+</div><div class="task">
+<span>💊 Medicine after Dinner</span>
+<button onclick="toggle(this)">Mark</button>
+</div><div class="footer">
+Made with ❤️ by Fahad
+</div></div><script>
+function toggle(btn){
+if(btn.classList.contains("done")){
+btn.classList.remove("done");
+btn.innerText="Mark";
+}else{
+btn.classList.add("done");
+btn.innerText="Done ✔";
+}
+}
+</script></body>
+</html>
